@@ -27,7 +27,7 @@
 4	contraria	contrario	ADJ	A	Gender=Fem|Number=Sing	6	advcl	_	SpaceAfter=No // TODO [Note] da rivedere
 5	,	,	PUNCT	FF	_	4	punct	_	_
 6-7	rassegnamoci	_	_	_	_	_	_	_	_
-6   rassegnamo  rassegnare  AUX VA VerbForm=Inf 0   root   _    _
+6   rassegnamo  rassegnare  VERB V VerbForm=Inf 0   root   _    _
 7   ci	ci	PRON	PC	Clitic=Yes|PronType=Prs 6   obj   _   _
 8-9	ai	_	_	_	_	_	_	_	_
 10	a	a	ADP	E	_	9	case	_	_
@@ -40,10 +40,10 @@
 # sent_id = 422
 # text = Io sono in tutto rassegnato e l’eventualità di perdere la vita combattendo non mi spaventa affatto, anzi penso che nessuna sorte potrebbe essere più gloriosa di questa....
 1	Io	io	PRON	PE	Number=Sing|Person=1|PronType=Prs	5	nsubj	_	_
-2	sono	essere	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	aux	_	_
+2	sono	essere	AUX	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	aux	_	_
 3	in	in	ADP	E	_	4	case	_	_
 4	tutto	tutto	PRON	PI	Gender=Masc|Number=Sing|PronType=Ind	5	obl	_	_
-5	rassegnato	rassegnato	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+5	rassegnato	rassegnare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
 6	e	e	CCONJ	CC	_	16	cc	_	_
 7	l’	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	8	det	_	SpaceAfter=No
 8	eventualità	eventualità	NOUN	S	Gender=Fem	16	nsubj	_	_
@@ -89,18 +89,18 @@
 
 # sent_id = 424
 # text = TENENTE DEL 125° Fant.
-1	TENENTE	tenente	NOUN	S	_	5	advmod	_	_ // TODO [features]  
+1	TENENTE	tenente	NOUN	S	Gender=Masc|Number=Sing	5	advmod	_	_ // TODO [dep] mettere root
 2-3	DEL	_	_	_	_	_	_	_	_
 2	DI	di	ADP	E	_	5	case	_	_
 3	IL	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
 4	125°	125°	ADJ	NO	NumType=Ord	5	amod	_	_
-5	Fant	Fant	PROPN	SP	_	0	root	_	SpaceAfter=No
+5	Fant	fanteria	NOUN	S	_	0	root	_	SpaceAfter=No
 6	.	.	PUNCT	FS	_	5	punct	_	_
 
 # sent_id = 425
 # text = GIOSUÈ BORSI.
 1	GIOSUÈ	Giosuè	PROPN	SP	_	0	root	_	_
-2	BORSI	BORSI	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
+2	BORSI	Borsi	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
 3	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
 # sent_id = 426
@@ -162,7 +162,7 @@
 21	,	,	PUNCT	FF	_	24	punct	_	_
 22	che	che	PRON	PR	PronType=Rel	24	nsubj	_	_
 23	non	non	ADV	BN	PronType=Neg	24	advmod	_	_
-24	sopporti	sopporire	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	conj	_	_
+24	sopporti	sopportare	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	conj	_	_ // FIXME STRANGE sopporire
 25	gioghi	giogo	NOUN	S	Gender=Masc|Number=Plur	24	obj	_	SpaceAfter=No
 26	.	.	PUNCT	FS	_	2	punct	_	_
 
@@ -190,18 +190,18 @@
 19	,	,	PUNCT	FF	_	6	punct	_	_
 20	soltanto	soltanto	ADV	B	_	22	advmod	_	_
 21	perchè	perché	SCONJ	CS	_	22	advmod	_	_
-22	son	essere	NOUN	S	Gender=Masc	6	appos	_	_
+22	son	essere	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	appos	_	_
 23	forti	forte	ADJ	A	Number=Plur	22	amod	_	_
 24	e	e	CCONJ	CC	_	26	cc	_	_
 25	bene	bene	ADV	B	_	26	advmod	_	_
-26	armati	armata	ADJ	A	Gender=Masc|Number=Plur	22	conj	_	SpaceAfter=No
+26	armati	armato	ADJ	A	Gender=Masc|Number=Plur	22	conj	_	SpaceAfter=No
 27	?	?	PUNCT	FS	_	22	punct	_	_
 
 # sent_id = 430
 # text = e dov’è il tuo senso di giustizia e di libertà?
 1	e	e	CCONJ	CC	_	6	cc	_	_
-2	dov’	idov	PRON	PC	Clitic=Yes|Number=Sing|Person=3|PronType=Prs	6	nsubj	_	SpaceAfter=No
-3	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+2	dov’	dove	ADV	B	_	6	nsubj	_	SpaceAfter=No // FIXME STRANGE idov
+3	è	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 5	tuo	tuo	DET	AP	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det:poss	_	_
 6	senso	senso	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
@@ -239,7 +239,7 @@
 21	,	,	PUNCT	FF	_	8	punct	_	_
 22	come	come	ADP	E	_	24	case	_	_
 23	l’	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	24	det	_	SpaceAfter=No
-24	ultimo	ultimo	NOUN	S	Gender=Masc|Number=Sing	8	nmod	_	_
+24	ultimo	ultimo	ADJ	A	Gender=Masc|Number=Sing	27	nmod	_	_
 25-26	dei	_	_	_	_	_	_	_	_
 25	di	di	ADP	E	_	27	case	_	_
 26	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	27	det	_	_
@@ -274,7 +274,7 @@
 4	,	,	PUNCT	FF	_	7	punct	_	_
 5	ma	ma	CCONJ	CC	_	7	cc	_	_
 6	non	non	ADV	BN	PronType=Neg	7	advmod	_	_
-7	schiavo	schiavo	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	3	conj	_	SpaceAfter=No
+7	schiavo	schiavo	NOUN	S	Gender=Masc|Number=Sing	3	conj	_	SpaceAfter=No
 8	.	.	PUNCT	FS	_	3	punct	_	_
 
 # sent_id = 434
@@ -286,7 +286,7 @@
 5	me	me	PRON	PC	Clitic=Yes|Number=Sing|Person=1|PronType=Prs	3	nmod	_	SpaceAfter=No
 6	.	.	PUNCT	FS	_	2	punct	_	_
 
-# sent_id = 435
+# sent_id = 435 // FIXME !!! CHECKPOINT !!!
 # text = E intanto son pronto a sopportare qualunque rigida disciplina, a lasciar la mamma, la casa, gli studi, a dormire in terra, a soffrire la fame e il freddo.
 1	E	e	CCONJ	CC	_	4	cc	_	_
 2	intanto	intanto	ADV	B	_	4	advmod	_	_
@@ -2977,11 +2977,11 @@
 # sent_id = 583
 # text = Sotto TEN. DI FANT. MATTEO BASSO.
 1	Sotto	sotto	ADP	E	_	2	case	_	_
-2	TEN.	TEN.	PROPN	SP	_	0	root	_	_
+2	TEN.	tenente	NOUN	S	_	0	root	_	_
 3	DI	Di	ADP	E	_	4	case	_	_
-4	FANT	FANT	PROPN	SP	_	2	nmod	_	SpaceAfter=No
+4	FANT	fanteria	NOUN	S	_	2	nmod	_	SpaceAfter=No
 5	.	.	PUNCT	FF	_	4	punct	_	_
-6	MATTEO	MATTEO	PROPN	SP	_	4	nmod	_	_
+6	MATTEO	Matteo	PROPN	SP	_	4	nmod	_	_
 7	BASSO	basso	PROPN	SP	_	6	flat:name	_	SpaceAfter=No
 8	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n\t\s
 

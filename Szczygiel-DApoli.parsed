@@ -1,22 +1,22 @@
 
 # sent_id = 419
 # text = Sto bene e vivo perfettamente tranquillo.
-1	Sto	stare	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	cop	_	_
-2	bene	bene	ADV	B	_	6	advmod	_	_
+1	Sto	stare	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
+2	bene	bene	ADV	B	_	1	advmod	_	_
 3	e	e	CCONJ	CC	_	4	cc	_	_
-4	vivo	vivo	ADJ	A	Gender=Masc|Number=Sing	2	conj	_	_
+4	vivo	vivere	VERB	V	Gender=Masc|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	conj	_	_
 5	perfettamente	perfettamente	ADV	B	_	6	advmod	_	_
-6	tranquillo	tranquillo	ADJ	A	Gender=Masc|Number=Sing	0	root	_	SpaceAfter=No
+6	tranquillo	tranquillo	ADJ	A	Gender=Masc|Number=Sing	4	amod	_	SpaceAfter=No
 7	.	.	PUNCT	FS	_	6	punct	_	_
 
 # sent_id = 420
 # text = Speriamo la sorte sia sempre propizia!
-1	Speriamo	sperare	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	6	csubj	_	_
+1	Speriamo	sperare	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 3	sorte	sorte	NOUN	S	Gender=Fem|Number=Sing	1	obj	_	_
 4	sia	essere	AUX	V	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
 5	sempre	sempre	ADV	B	_	6	advmod	_	_
-6	propizia	propiziare	ADJ	A	Gender=Fem|Number=Sing	0	root	_	SpaceAfter=No
+6	propizia	propizio	ADJ	A	Gender=Fem|Number=Sing	0	amod	_	SpaceAfter=No
 7	!	!	PUNCT	FS	_	6	punct	_	_
 
 # sent_id = 421
@@ -24,11 +24,11 @@
 1	Se	se	SCONJ	CS	_	4	mark	_	_
 2	poi	poi	ADV	B	_	4	advmod	_	_
 3	sarà	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	_
-4	contraria	contrario	ADJ	A	Gender=Fem|Number=Sing	6	advcl	_	SpaceAfter=No
+4	contraria	contrario	ADJ	A	Gender=Fem|Number=Sing	6	advcl	_	SpaceAfter=No // TODO [Note] da rivedere
 5	,	,	PUNCT	FF	_	4	punct	_	_
-6-7	rassegnamoci	_	_	_	_	_	_	_	_ // TODO mettere ROOT
-6   rassegnamo  rassegnare  AUX VA VerbForm=Inf 
-7   ci	ci	PRON	PC	Clitic=Yes|PronType=Prs
+6-7	rassegnamoci	_	_	_	_	_	_	_	_
+6   rassegnamo  rassegnare  AUX VA VerbForm=Inf 0   root   _    _
+7   ci	ci	PRON	PC	Clitic=Yes|PronType=Prs 6   obj   _   _
 8-9	ai	_	_	_	_	_	_	_	_
 10	a	a	ADP	E	_	9	case	_	_
 11	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
@@ -846,7 +846,7 @@
 4	sì	sì	ADV	B	_	3	advmod	_	SpaceAfter=No
 5	,	,	PUNCT	FF	_	8	punct	_	_
 6	ma	ma	CCONJ	CC	_	8	cc	_	_
-7	sopratutto	sopratutto	ADV	B	_	8	advmod	_	_
+7	sopratutto	soprattutto	ADV	B	_	8	advmod	_	_
 8	importa	importare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	conj	_	_
 9-10	conservarsi	_	_	_	_	_	_	_	_
 9	conservar	conservare	VERB	V	VerbForm=Inf	8	xcomp	_	_
@@ -1021,7 +1021,7 @@
 # sent_id = 472
 # text = Arrivederci, o mamma, non rattristarti, tutto questo ti ho scritto perchè lo dovevo....
 1-2	Arrivederci	_	_	_	_	_	_	_	SpaceAfter=No
-1	Arriveder	Arrivedere	VERB	V	VerbForm=Inf	0	root	_	_
+1	Arrivederci	Arrivedere	VERB	V	VerbForm=Inf	0	root	_	_
 2	ci	ci	PRON	PC	Clitic=Yes|Number=Plur|Person=1|PronType=Prs	1	expl	_	_
 3	,	,	PUNCT	FF	_	5	punct	_	_
 4	o	o	CCONJ	CC	_	5	cc	_	_
@@ -1334,9 +1334,9 @@
 # sent_id = 486
 # text = Questo tieni e tenete presente, insieme col pensiero che niun sacrificio è troppo grave per la terra nella quale viviamo e vivranno i nostri figlioli.
 1	Questo	questo	DET	DD	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
-2	tieni	tiene	NOUN	S	Gender=Masc|Number=Plur	0	root	_	_
+2	tieni	tenere	VERB	V	Gender=Masc|Number=Sing	0	root	_	_ // TODO [features] tenere
 3	e	e	CCONJ	CC	_	4	cc	_	_
-4	tenete	teneta	NOUN	S	Gender=Fem|Number=Plur	2	conj	_	_ // TODO [features] tenere?
+4	tenete	tenere	VERB	V	Gender=Fem|Number=Plur	2	conj	_	_ // TODO [features] tenere/tieni
 5	presente	presente	ADJ	A	Number=Sing	4	amod	_	SpaceAfter=No
 6	,	,	PUNCT	FF	_	2	punct	_	_
 7	insieme	insieme	ADV	B	_	10	case	_	_
@@ -1384,20 +1384,19 @@
 
 # sent_id = 488 // FIXME [Unione]
 # text = CAPITANO NELL’ 84° FaNT. MARIO MERLIN, medaglia d’oro.
-1	CAPITANO	capitano	PROPN	SP	_	0	root	_	_
+1	CAPITANO	capitano	NOUN	S	_	0	root	_	_
 2-3	NELL’	_	_	_	_	_	_	_	_
-2	IN	in	PROPN	SP	_	1	flat:name	_	_
+2	IN	in	ADP	E	_	1	flat:name	_	_
 3	L’	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
 4	84°	84°	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	5	amod	_	_
-5	FaNT	FaNT	PROPN	SP	_	1	nmod	_	SpaceAfter=No
-6	.	.	PUNCT	FS	_	1	punct	_	_
-7	MARIO	Mario	PROPN	SP	_	0	root	_	_
-8	MERLIN	MERLIN	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
-9	,	,	PUNCT	FF	_	1	punct	_	_
-10	medaglia	medaglia	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-11	d’	di	ADP	E	_	6	case	_	SpaceAfter=No
-12	oro	oro	NOUN	S	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-13	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
+5	FaNT.	FaNT	PROPN	SP	_	1	nmod	_	SpaceAfter=No
+6	MARIO	Mario	PROPN	SP	_	0	root	_	_
+7	MERLIN	MERLIN	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
+8	,	,	PUNCT	FF	_	1	punct	_	_
+9	medaglia	medaglia	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
+10	d’	di	ADP	E	_	6	case	_	SpaceAfter=No
+11	oro	oro	NOUN	S	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
+12	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
 # sent_id = 490
 # text = Caduto sull’Altipiano di Bainsizza il 29 settembre 1917.
@@ -1424,7 +1423,7 @@
 5	fante	fante	NOUN	S	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
 6	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No
 
-# sent_id = 492
+# sent_id = 492 // FIXME STRANGE
 # text = ]] 3 gennaio 1916.
 1	]	]	PUNCT	FB	_	3	punct	_	SpaceAfter=No
 2	]	]	PUNCT	FB	_	1	punct	_	SpacesAfter=\n\t\s
@@ -1440,12 +1439,12 @@
 3	oggi	oggi	ADV	B	_	4	advmod	_	_
 4	lavòrano	lavorare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No // TODO [features]
 5	,	,	PUNCT	FF	_	6	punct	_	_
-6	laceri	lacero	NOUN	S	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No
+6	laceri	lacero	ADJ	A	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No
 7	,	,	PUNCT	FF	_	8	punct	_	_
-8	imperterriti	imperterrito	NOUN	S	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No
+8	imperterriti	imperterrito	ADJ	A	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No
 9	,	,	PUNCT	FF	_	10	punct	_	_
-10	pazienti	paziente	NOUN	S	Number=Plur	4	conj	_	_
-11	fantaccini	fantaccino	ADJ	A	Gender=Masc|Number=Plur	10	amod	_	SpaceAfter=No
+10	pazienti	paziente	ADJ	A	Number=Plur	4	conj	_	_
+11	fantaccini	fantaccino	NOUN	S	Gender=Masc|Number=Plur	10	amod	_	SpaceAfter=No
 12	.	.	PUNCT	FS	_	4	punct	_	_
 
 # sent_id = 494
@@ -1507,7 +1506,7 @@
 # sent_id = 498
 # text = Chi s’è lanciato con la sua fragile carne contro le difese d’acciaio, contro l’insidia dei campi minati, contro le trincee di ferro e di cemento, mostri vomitatori di fuoco, draghi dalle cento bocche?
 1	Chi	chi	PRON	PQ	PronType=Int	4	nsubj	_	_
-2	s’	is	PRON	PC	Clitic=Yes|Number=Sing|Person=3|PronType=Prs	4	obj	_	SpaceAfter=No // TODO [Note] da controllare
+2	s’	si	PRON	PC	Clitic=Yes|Number=Sing|Person=3|PronType=Prs	4	obj	_	SpaceAfter=No // TODO [Note] da controllare
 3	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	aux	_	_
 4	lanciato	lanciare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
 5	con	con	ADP	E	_	9	case	_	_
@@ -1539,7 +1538,7 @@
 30	di	di	ADP	E	_	31	case	_	_
 31	cemento	cemento	NOUN	S	Gender=Masc|Number=Sing	28	conj	_	SpaceAfter=No
 32	,	,	PUNCT	FF	_	4	punct	_	_
-33	mostri	mostro	DET	DI	Gender=Masc|Number=Plur|PronType=Ind	34	det	_	_
+33	mostri	mostro	NOUN	S	Gender=Masc|Number=Plur|PronType=Ind	34	det	_	_
 34	vomitatori	vomitatore	NOUN	S	Gender=Masc|Number=Plur	4	obj	_	_
 35	di	di	ADP	E	_	36	case	_	_
 36	fuoco	fuoco	NOUN	S	Gender=Masc|Number=Sing	34	nmod	_	SpaceAfter=No
@@ -1571,7 +1570,7 @@
 9	,	,	PUNCT	FF	_	10	punct	_	_
 10	oscuro	oscuro	ADJ	A	Gender=Masc|Number=Sing	8	conj	_	SpaceAfter=No
 11	,	,	PUNCT	FF	_	7	punct	_	_
-12	sconosciuto	sconosciuto	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	7	acl	_	_
+12	sconosciuto	sconosciuto	ADJ	A	Gender=Masc|Number=Sing	7	acl	_	_
 13	a	a	ADP	E	_	14	case	_	_
 14	te	te	PRON	PC	Clitic=Yes|Number=Sing|Person=2|PronType=Prs	12	obl	_	_
 15	ed	e	CCONJ	CC	_	18	cc	_	_
@@ -1620,7 +1619,7 @@
 34	epopea	epopea	NOUN	S	Gender=Fem|Number=Sing	31	nmod	_	SpaceAfter=No
 35	.	.	PUNCT	FS	_	16	punct	_	_
 
-# sent_id = 502
+# sent_id = 502 // FIXME [Unione] 502/503?
 # text = Il fante è Ulisse, — sagace e prode, industre e ardimentoso — il fante è il tutto anonimo, è Nessuno;
 1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	fante	fante	NOUN	S	Gender=Masc|Number=Sing	4	nsubj	_	_
@@ -1692,10 +1691,10 @@
 20	perdizione	perdizione	NOUN	S	Gender=Fem|Number=Sing	18	nmod	_	_
 21	e	e	CCONJ	CC	_	23	cc	_	_
 22	di	di	ADP	E	_	23	case	_	_
-23	vittoria...	vittoria...	NOUN	S	_	20	conj	_	SpaceAfter=No
+23	vittoria...	vittoria...	NOUN	S	_	20	conj	_	SpaceAfter=No // TODO separate punct
 24	.	.	PUNCT	FS	_	6	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 505
+# sent_id = 505 // FIXME Remove
 # text = [[(Inedito, Archivio della Guerra, Milano).
 1	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
 2	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
@@ -1712,8 +1711,8 @@
 12	)	)	PUNCT	FB	_	4	punct	_	SpaceAfter=No
 13	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 506
-# text = CAPITANO NELL’ 84° FANT.
+# sent_id = 506 // FIXME [Unione]
+# text = CAPITANO NELL’ 84° FANT. MARIO MERLIN, medaglia d’oro.
 1	CAPITANO	capitano	PROPN	SP	_	0	root	_	_
 2-3	NELL’	_	_	_	_	_	_	_	_
 2	IN	in	PROPN	SP	_	1	flat:name	_	_
@@ -1721,16 +1720,13 @@
 4	84°	84°	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	5	amod	_	_
 5	FANT	FANT	PROPN	SP	_	1	nmod	_	SpaceAfter=No
 6	.	.	PUNCT	FS	_	1	punct	_	_
-
-# sent_id = 507
-# text = MARIO MERLIN, medaglia d’oro.
-1	MARIO	Mario	PROPN	SP	_	0	root	_	_
-2	MERLIN	MERLIN	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
-3	,	,	PUNCT	FF	_	1	punct	_	_
-4	medaglia	medaglia	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-5	d’	di	ADP	E	_	6	case	_	SpaceAfter=No
-6	oro	oro	NOUN	S	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-7	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
+7	MARIO	Mario	PROPN	SP	_	0	root	_	_
+8	MERLIN	MERLIN	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
+9	,	,	PUNCT	FF	_	1	punct	_	_
+10	medaglia	medaglia	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
+11	d’	di	ADP	E	_	6	case	_	SpaceAfter=No
+12	oro	oro	NOUN	S	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
+13	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
 # sent_id = 508
 # text = Caduto sull’Altipiano di Bainsizza il 29 settembre 1917.
@@ -1747,7 +1743,7 @@
 10	1917	1917	NUM	N	NumType=Card	8	flat	_	SpaceAfter=No
 11	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 509
+# sent_id = 509 // TODO tokenization error?
 # text = Il sangue è la minor cosa che possiamo dare.]] 29 novembre 1915.
 1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	sangue	sangue	NOUN	S	Gender=Masc|Number=Sing	6	nsubj	_	_

@@ -286,7 +286,7 @@
 5	me	me	PRON	PC	Clitic=Yes|Number=Sing|Person=1|PronType=Prs	3	nmod	_	SpaceAfter=No
 6	.	.	PUNCT	FS	_	2	punct	_	_
 
-# sent_id = 435 // FIXME !!! CHECKPOINT !!!
+# sent_id = 435
 # text = E intanto son pronto a sopportare qualunque rigida disciplina, a lasciar la mamma, la casa, gli studi, a dormire in terra, a soffrire la fame e il freddo.
 1	E	e	CCONJ	CC	_	4	cc	_	_
 2	intanto	intanto	ADV	B	_	4	advmod	_	_
@@ -351,7 +351,7 @@
 1	Tu	tu	PRON	PE	Number=Sing|Person=2|PronType=Prs	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	FF	_	1	punct	_	_
 3	che	che	PRON	PR	PronType=Rel	6	nsubj	_	_
-4	sacrifici	sacrifico	ADJ	A	Gender=Masc|Number=Plur	6	amod	_	_
+4	sacrifici	sacrificio	NOUN	S	Gender=Masc|Number=Plur	6	amod	_	_
 5	sei	essere	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	6	cop	_	_
 6	pronto	pronto	ADJ	A	Gender=Masc|Number=Sing	1	acl:relcl	_	_
 7	a	a	ADP	E	_	8	mark	_	_
@@ -375,7 +375,7 @@
 # text = Cento zaini porterai sulle spalle!
 1	Cento	cento	NUM	N	NumType=Card	2	nummod	_	_
 2	zaini	zaino	NOUN	S	Gender=Masc|Number=Plur	3	nsubj	_	_
-3	porterai	porteere	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin	0	root	_	_
+3	porterai	portare	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin	0	root	_	_ // FIXME STRANGE porteere
 4-5	sulle	_	_	_	_	_	_	_	_
 4	su	su	ADP	E	_	6	case	_	_
 5	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
@@ -447,7 +447,7 @@
 
 # sent_id = 444
 # text = Son diventato forte, energico, attivo, coi capelli rasati, i baffetti, irriconoscibile.
-1	Son	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	2	aux	_	_
+1	Son	essere	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	_	_
 2	diventato	diventare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
 3	forte	forte	ADJ	A	Number=Sing	2	xcomp	_	SpaceAfter=No
 4	,	,	PUNCT	FF	_	5	punct	_	_
@@ -487,7 +487,7 @@
 16	,	,	PUNCT	FF	_	17	punct	_	_
 17	andavo	andare	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	5	conj	_	_
 18	a	a	ADP	E	_	19	case	_	_
-19	letto	leggere	NOUN	S	Gender=Masc|Number=Sing	17	obl	_	_
+19	letto	letto	NOUN	S	Gender=Masc|Number=Sing	17	obl	_	_ // FIXME STRANGE LETTO -> LEGGERE
 20	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	notte	notte	NOUN	S	Gender=Fem|Number=Sing	17	obj	_	_
 22	tardi	tardi	ADV	B	_	17	advmod	_	_
@@ -534,11 +534,11 @@
 7	moralmente	moralmente	ADV	B	_	9	advmod	_	SpaceAfter=No
 8	,	,	PUNCT	FF	_	7	punct	_	_
 9	diventa	diventare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	conj	_	_
-10	sobrio	sobrio	NOUN	S	Gender=Masc|Number=Sing	9	xcomp	_	SpaceAfter=No
+10	sobrio	sobrio	ADJ	A	Number=Sing	9	xcomp	_	SpaceAfter=No
 11	,	,	PUNCT	FF	_	12	punct	_	_
-12	alacre	alacre	NOUN	S	Gender=Masc|Number=Sing	10	conj	_	_
+12	alacre	alacre	ADJ	A	Number=Sing	10	conj	_	_
 13	e	e	CCONJ	CC	_	14	cc	_	_
-14	mattiniero	mattiniero	NOUN	S	Gender=Masc|Number=Sing	10	conj	_	SpaceAfter=No
+14	mattiniero	mattiniero	ADJ	A	Number=Sing	10	conj	_	SpaceAfter=No
 15	.	.	PUNCT	FS	_	4	punct	_	_
 
 # sent_id = 448
@@ -573,12 +573,12 @@
 1	Mi	mi	PRON	PC	Clitic=Yes|Number=Sing|Person=1|PronType=Prs	2	iobj	_	_
 2	dirai	dire	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin	0	root	_	_
 3	che	che	SCONJ	CS	_	6	mark	_	_
-4	sono	essere	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+4	sono	essere	AUX	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	cop	_	_
 5	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 6	bruto	bruto	ADJ	A	Gender=Masc|Number=Sing	2	ccomp	_	_
 7	e	e	CCONJ	CC	_	9	cc	_	_
 8	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	sanguinario	sanguinario	NOUN	S	Gender=Masc|Number=Sing	6	conj	_	_
+9	sanguinario	sanguinario	ADJ	A	Gender=Masc|Number=Sing	6	conj	_	_
 10	ad	a	ADP	E	_	11	mark	_	_
 11	amare	amare	VERB	V	VerbForm=Inf	9	acl	_	_
 12	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	13	det	_	_
@@ -597,10 +597,10 @@
 8	guerra	guerra	NOUN	S	Gender=Fem|Number=Sing	6	obj	_	SpaceAfter=No
 9	,	,	PUNCT	FF	_	6	punct	_	_
 10	la	il	PRON	PC	Clitic=Yes|Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
-11	detesto	detesto	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	parataxis	_	SpaceAfter=No
+11	detesto	detestare	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	parataxis	_	SpaceAfter=No // FIXME STRANGE destestare
 12	,	,	PUNCT	FF	_	11	punct	_	_
 13	l’	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No
-14	abborro	abborro	NOUN	S	Gender=Masc|Number=Sing	11	appos	_	SpaceAfter=No
+14	abborro	abborro	NOUN	S	Gender=Masc|Number=Sing	11	appos	_	SpaceAfter=No // TODO [Note] da rivedere abborro
 15	,	,	PUNCT	FF	_	14	punct	_	_
 16	vorrei	volere	VERB	V	Mood=Cnd|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	14	advcl	_	_
 17	che	che	SCONJ	CS	_	20	mark	_	_
@@ -692,9 +692,9 @@
 6	fossero	essere	VERB	V	Mood=Sub|Number=Plur|Person=3|Tense=Imp|VerbForm=Fin	1	ccomp	_	SpaceAfter=No
 7	,	,	PUNCT	FF	_	9	punct	_	_
 8	ma	ma	CCONJ	CC	_	9	cc	_	_
-9	son	essere	NOUN	S	Gender=Masc	1	conj	_	_
+9	son	essere	VERB	V	Mood=Ind|Num=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	_
 10	necessari	necessario	ADJ	A	Gender=Masc|Number=Plur	9	amod	_	_
-11	finchè	finché	CCONJ	CC	_	16	cc	_	_
+11	finchè	finché	SCONJ	CS	_	16	cc	_	_
 12-13	al	_	_	_	_	_	_	_	_
 12	a	a	ADP	E	_	14	case	_	_
 13	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	14	det	_	_
@@ -794,9 +794,10 @@
 3	dovrete	dovere	AUX	VM	Mood=Ind|Number=Plur|Person=2|Tense=Fut|VerbForm=Fin	4	aux	_	_
 4	piangere	piangere	VERB	V	VerbForm=Inf	0	root	_	_
 5	per	per	ADP	E	_	6	case	_	_
-6	me....	me....	NOUN	S	_	4	obl	_	SpaceAfter=No
-7	]	]	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-8	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n\t\s
+6	me	me	PRON	PC	Clitic=Yes|Number=Sing|Person=1|PronType=Prs	4	obl	_	SpaceAfter=No
+7   ... .	PUNCT	FS	_	1	punct	_	_
+8	]	]	PUNCT	FB	_	4	punct	_	SpaceAfter=No
+9	]	]	PUNCT	FB	_	4	punct	_	SpacesAfter=\n\t\s
 
 # sent_id = 465
 # text = Vi prego, non trepidate per me.
@@ -810,7 +811,7 @@
 8	.	.	PUNCT	FS	_	2	punct	_	_
 
 # sent_id = 466
-# text = Mi sono affidato, e tu lo sai, o mamma, alla Provvidenza Divina, fiducioso in Essa.... 
+# text = Mi sono affidato, e tu lo sai, o mamma, alla Provvidenza Divina, fiducioso in Essa....
 1	Mi	mi	PRON	PC	Clitic=Yes|Number=Sing|Person=1|PronType=Prs	3	expl	_	_
 2	sono	essere	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	3	aux	_	_
 3	affidato	affidare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
@@ -831,17 +832,18 @@
 17	,	,	PUNCT	FF	_	15	punct	_	_
 18	fiducioso	fiducioso	ADJ	A	Gender=Masc|Number=Sing	15	amod	_	_
 19	in	in	ADP	E	_	20	case	_	_
-20	Essa....	Essa....	PROPN	SP	_	18	obl	_	SpacesAfter=\n\t\s // TODO separate punct
+20	Essa	Essa	PROPN	SP	_	18	obl	_	SpacesAfter=\n\t\s // TODO separate punct
+21  ... .	PUNCT	FS	_	1	punct	_	_
 
 # sent_id = 467 // TODO unify punct
 # text = Ritornare....
-1	Ritornare...	Ritornare...	NOUN	S	_	0	root	_	SpaceAfter=No
-2	.	.	PUNCT	FS	_	1	punct	_	_
+1	Ritornare	Ritornare	NOUN	S	_	0	root	_	SpaceAfter=No
+2	... .	PUNCT	FS	_	1	punct	_	_
 
 # sent_id = 468
 # text = ritornare sano importa sì, ma sopratutto importa conservarsi puri, importa compiere fino all’ultimo il proprio dovere.
 1	ritornare	ritornare	VERB	V	VerbForm=Inf	0	root	_	_
-2	sano	sare	ADJ	A	Gender=Masc|Number=Sing	1	xcomp	_	_
+2	sano	sano	ADJ	A	Gender=Masc|Number=Sing	1	xcomp	_	_ // FIXME STRANGE sano -> sare
 3	importa	importare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	advcl	_	_
 4	sì	sì	ADV	B	_	3	advmod	_	SpaceAfter=No
 5	,	,	PUNCT	FF	_	8	punct	_	_
@@ -851,7 +853,7 @@
 9-10	conservarsi	_	_	_	_	_	_	_	_
 9	conservar	conservare	VERB	V	VerbForm=Inf	8	xcomp	_	_
 10	si	si	PRON	PC	Clitic=Yes|Person=3|PronType=Prs	9	expl	_	_
-11	puri	pure	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	9	xcomp	_	SpaceAfter=No
+11	puri	puro	ADJ	A	Gender=Fem|Num=Plur	9	xcomp	_	SpaceAfter=No
 12	,	,	PUNCT	FF	_	3	punct	_	_
 13	importa	importare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	3	advcl	_	_
 14	compiere	compiere	VERB	V	VerbForm=Inf	13	ccomp	_	_
@@ -865,7 +867,7 @@
 21	dovere	dovere	NOUN	S	Gender=Masc|Number=Sing	14	obj	_	SpaceAfter=No
 22	.	.	PUNCT	FS	_	1	punct	_	_
 
-# sent_id = 469
+# sent_id = 469 // FIXME !!! ANNOTATION CHECKPOINT !!!
 # text = Per questo mi sento tranquillo perchè spero che Iddio mi darà la forza di compierlo questo dovere, ma mi farà capace, come gli chiedo, di compiere anche il supremo sacrificio.
 1	Per	per	ADP	E	_	2	case	_	_
 2	questo	questo	PRON	PD	Gender=Masc|Number=Sing|PronType=Dem	4	obl	_	_

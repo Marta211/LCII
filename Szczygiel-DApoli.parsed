@@ -67,7 +67,7 @@
 26	più	più	ADV	B	_	27	advmod	_	_
 27	gloriosa	glorioso	ADJ	A	Gender=Fem|Number=Sing	20	ccomp	_	_
 28	di	di	ADP	E	_	29	case	_	_
-29	questa	questa	NUM	N	NumType=Card	27	obl	_	SpaceAfter=No
+29	questa	questa	PRON	PD	Gender=Fem|Number=Sing|PronType=Dem	27	obl	_	SpaceAfter=No
 30	....	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n\t\s
 
 # sent_id = 423
@@ -739,7 +739,7 @@
 2	,	,	PUNCT	FF	_	1	punct	_	_
 3	1931	1931	NUM	N	NumType=Card	1	nummod	_	SpaceAfter=No
 4	,	,	PUNCT	FF	_	1	punct	_	_
-5	Pag.	pagina	PROPN	SP	_	1	nmod	_	_
+5	Pag.	pagina	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	_
 6	377	377	NUM	N	NumType=Card	5	nummod	_	SpaceAfter=No
 7	)	)	PUNCT	FB	_	5	punct	_	SpaceAfter=No
 8	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s

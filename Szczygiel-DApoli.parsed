@@ -1,4 +1,3 @@
-
 # sent_id = 419
 # text = Sto bene e vivo perfettamente tranquillo.
 1	Sto stare   VERB    V   Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -118,7 +117,7 @@
 1	La	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	_
 2	vera	vero	ADJ	A	Gender=Fem|Number=Sing	3	amod	_	_
 3	libertà	libertà	NOUN	S	Gender=Fem	7	nsubj	_	_
-4	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+4	è	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 5-6	nel	_	_	_	_	_	_	_	_
 5	in	in	ADP	E	_	7	case	_	_
 6	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
@@ -200,7 +199,7 @@
 # text = e dov’è il tuo senso di giustizia e di libertà?
 1	e	e	CCONJ	CC	_	6	cc	_	_
 2	dov’	dove	ADV	B	_	6	advmod	_	SpaceAfter=No
-3	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+3	è	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 5	tuo	tuo	DET	AP	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det:poss	_	_
 6	senso	senso	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
@@ -349,7 +348,7 @@
 1	Tu	tu	PRON	PE	Number=Sing|Person=2|PronType=Prs	6	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	FF	_	1	punct	_	_
 3	che	che	DET	DQ	PronType=Int	4	amod	_	_
-4	sacrifici	sacrifico	ADJ	A	Gender=Masc|Number=Plur	8	obj	_	_
+4	sacrifici	sacrificio	NOUN	S	Gender=Masc|Number=Plur	8	obj	_	_
 5	sei	essere	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	6	cop	_	_
 6	pronto	pronto	ADJ	A	Gender=Masc|Number=Sing	0	root	_	_
 7	a	a	ADP	E	_	8	mark	_	_
@@ -1013,7 +1012,7 @@
 57	di	di	ADP	E	_	58	case	_	_
 58	gratitudine	gratitudine	NOUN	S	Gender=Fem|Number=Sing	56	nmod	_	_
 59	che	che	SCONJ	CS	_	60	obj	_	_
-60	ho	avere	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	58	acl:relcl	_	_
+60	ho	avere	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	58	acl:relcl	_	_
 61	verso	verso	ADP	E	_	63	case	_	_
 62	di	di	ADP	E	_	61	fixed	_	_
 63	te	te	PRON	PE	Number=Sing|Person=2|PronType=Prs	60	obl	_	SpaceAfter=No
@@ -1021,7 +1020,6 @@
 
 # sent_id = 472
 # text = Arrivederci, o mamma, non rattristarti, tutto questo ti ho scritto perchè lo dovevo....
-1-2	Arrivederci	_	_	_	_	_	_	_	SpaceAfter=No
 1	Arrivedeci	Arrivederci	INTJ	I   _	8	discourse	_	_
 2	,	,	PUNCT	FF	_	8	punct	_	_
 3	o	o	INTJ	I	_	8	discourse	_	_
@@ -1110,7 +1108,7 @@
 # text = Niun sacrificio è troppo grave per la terra in cui viviamo...]] ....
 1	Niun	niuno	DET	DI	Gender=Masc|Number=Sing|PronType=Ind	2	det	_	_
 2	sacrificio	sacrificio	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
-3	è	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
+3	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
 4	troppo	troppo	ADV	B	_	5	advmod	_	_
 5	grave	grave	ADJ	A	Number=Sing	0	root	_	_
 6	per	per	ADP	E	_	8	case	_	_
@@ -1228,16 +1226,16 @@
 
 # sent_id = 482
 # text = Dimentica un po’ il sacro tuo egoismo personale, accetta con buon animo il disappunto che ti coglie, che tocca i tuoi più belli affetti e che ti pone nella più grande categoria delle donne, siano esse madri, spose o figlie, e, nella compagnia di Mamma, Babbo e di Aldo, tranquilla abbi fiducia in Dio.
-1	Dimentica	dimenticare	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	amod	_	_
+1	Dimentica	dimenticare	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	3	det	_	_
 3	po’	poco	ADV	B	_	1	advmod	_	_
-4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
-5	sacro	sacro	NOUN	S	Gender=Masc|Number=Sing	10	nsubj	_	_
+4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	7	det	_	_
+5	sacro	sacro	ADJ	A	Gender=Masc|Number=Sing	7	amod	_	_
 6	tuo	tuo	DET	AP	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	7	det:poss	_	_
-7	egoismo	egoismo	NOUN	S	Gender=Masc|Number=Sing	5	nmod	_	_
+7	egoismo	egoismo	NOUN	S	Gender=Masc|Number=Sing	1	obj	_	_
 8	personale	personale	ADJ	A	Number=Sing	7	amod	_	SpaceAfter=No
 9	,	,	PUNCT	FF	_	5	punct	_	_
-10	accetta	accettare	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_
+10	accetta	accettare	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	1	conj	_	_
 11	con	con	ADP	E	_	13	case	_	_
 12	buon	buono	ADJ	A	Gender=Masc|Number=Sing	13	amod	_	_
 13	animo	animo	NOUN	S	Gender=Masc|Number=Sing	10	obl	_	_
@@ -1250,14 +1248,14 @@
 20	che	che	PRON	PR	PronType=Rel	21	nsubj	_	_
 21	tocca	toccare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	conj	_	_
 22	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	23	det	_	_
-23	tuoi	tuo	PRON	PP	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	21	obj	_	_
+23	tuoi	tuo	DET	AP	Gender=Masc|Number=Plur|Poss=Yes|PronType=Prs	26	det:poss	_	_
 24	più	più	ADV	B	_	25	advmod	_	_
-25	belli	bello	ADJ	A	Gender=Masc|Number=Plur	23	acl	_	_
-26	affetti	affetto	NOUN	S	Gender=Masc|Number=Plur	25	amod	_	_
+25	belli	bello	ADJ	A	Gender=Masc|Number=Plur	26	amod	_	_
+26	affetti	affetto	NOUN	S	Gender=Masc|Number=Plur	21	obj	_	_
 27	e	e	CCONJ	CC	_	30	cc	_	_
 28	che	che	PRON	PR	PronType=Rel	30	nsubj	_	_
 29	ti	ti	PRON	PC	Clitic=Yes|Number=Sing|Person=2|PronType=Prs	30	obj	_	_
-30	pone	porre	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	25	conj	_	_
+30	pone	porre	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	21	conj	_	_
 31-32	nella	_	_	_	_	_	_	_	_
 31	in	in	ADP	E	_	35	case	_	_
 32	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	35	det	_	_
@@ -1269,34 +1267,34 @@
 37	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	38	det	_	_
 38	donne	donna	NOUN	S	Gender=Fem|Number=Plur	35	nmod	_	SpaceAfter=No
 39	,	,	PUNCT	FF	_	42	punct	_	_
-40	siano	essere	VERB	V	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	42	cop	_	_
+40	siano	essere	AUX	V	Mood=Sub|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	42	cop	_	_
 41	esse	esse	PRON	PE	Gender=Fem|Number=Plur|Person=3|PronType=Prs	42	nsubj	_	_
-42	madri	madre	NOUN	S	Gender=Fem|Number=Plur	30	conj	_	SpaceAfter=No
+42	madri	madre	NOUN	S	Gender=Fem|Number=Plur	38	advcl	_	SpaceAfter=No
 43	,	,	PUNCT	FF	_	44	punct	_	_
 44	spose	sposo	NOUN	S	Gender=Fem|Number=Plur	42	conj	_	_
 45	o	o	CCONJ	CC	_	46	cc	_	_
-46	figlie	figlio	NOUN	S	Gender=Fem|Number=Plur	42	conj	_	SpaceAfter=No
+46	figlie	figlio	NOUN	S	Gender=Fem|Number=Plur	44	conj	_	SpaceAfter=No
 47	,	,	PUNCT	FF	_	61	punct	_	_
 48	e	e	CCONJ	CC	_	61	cc	_	SpaceAfter=No
 49	,	,	PUNCT	FF	_	61	punct	_	_
 50-51	nella	_	_	_	_	_	_	_	_
 50	in	in	ADP	E	_	52	case	_	_
 51	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	52	det	_	_
-52	compagnia	compagnia	NOUN	S	Gender=Fem|Number=Sing	61	obl	_	_
+52	compagnia	compagnia	NOUN	S	Gender=Fem|Number=Sing	46	conj	_	_
 53	di	di	ADP	E	_	54	case	_	_
 54	Mamma	mamma	NOUN	S	Gender=Fem|Number=Sing	52	nmod	_	SpaceAfter=No
 55	,	,	PUNCT	FF	_	56	punct	_	_
-56	Babbo	babbo	NOUN	S	Gender=Masc|Number=Sing	52	conj	_	_
+56	Babbo	babbo	NOUN	S	Gender=Masc|Number=Sing	54	conj	_	_
 57	e	e	CCONJ	CC	_	59	cc	_	_
 58	di	di	ADP	E	_	59	case	_	_
-59	Aldo	Aldo	PROPN	SP	_	52	conj	_	SpaceAfter=No
+59	Aldo	Aldo	PROPN	SP	_	56	conj	_	SpaceAfter=No
 60	,	,	PUNCT	FF	_	61	punct	_	_
-61	tranquilla	tranquillo	ADJ	A	Gender=Fem|Number=Sing	42	conj	_	_
-62	abbi	avere	VERB	V	Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	63	det	_	_
-63	fiducia	fiducia	NOUN	S	Gender=Fem|Number=Sing	61	obl	_	_
+61	tranquilla	tranquillo	ADJ	A	Gender=Fem|Number=Sing	42	advcl	_	_
+62	abbi	avere	VERB	V	Mood=Sub|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	63	advcl	_	_
+63	fiducia	fiducia	NOUN	S	Gender=Fem|Number=Sing	62	obj	_	_
 64	in	in	ADP	E	_	65	case	_	_
 65	Dio	Dio	PROPN	SP	_	63	nmod	_	SpaceAfter=No
-66	.	.	PUNCT	FS	_	10	punct	_	SpacesAfter=\n\t\s
+66	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
 # sent_id = 483
 # text = Avrei desiderato essere in famiglia l’unico oggetto di preoccupazione da parte vostra.
@@ -1338,11 +1336,11 @@
 
 # sent_id = 486
 # text = Questo tieni e tenete presente, insieme col pensiero che niun sacrificio è troppo grave per la terra nella quale viviamo e vivranno i nostri figlioli.
-1	Questo	questo	DET	DD	Gender=Masc|Number=Sing|PronType=Dem	2	det	_	_
+1	Questo	questo	PRON	PD	Gender=Masc|Number=Sing|PronType=Dem	2	nsubj	_	_
 2	tieni	tenere	VERB	V	Mood=Imp|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	e	e	CCONJ	CC	_	4	cc	_	_
 4	tenete	tenere	VERB	V	Mood=Imp|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	2	conj	_	_
-5	presente	presente	ADJ	A	Number=Sing	4	amod	_	SpaceAfter=No
+5	presente	presente	ADJ	A	Number=Sing	2	xcomp	_	SpaceAfter=No
 6	,	,	PUNCT	FF	_	2	punct	_	_
 7	insieme	insieme	ADV	B	_	10	case	_	_
 8-9	col	_	_	_	_	_	_	_	_
@@ -1352,7 +1350,7 @@
 11	che	che	PRON	PR	PronType=Rel	16	mark	_	_
 12	niun	niuno	DET	DI	Gender=Masc|Number=Sing|PronType=Ind	13	det	_	_
 13	sacrificio	sacrificio	NOUN	S	Gender=Masc|Number=Sing	16	nsubj	_	_
-14	è	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_
+14	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	16	cop	_	_
 15	troppo	troppo	ADV	B	_	16	advmod	_	_
 16	grave	grave	ADJ	A	Number=Sing	2	amod	_	_
 17	per	per	ADP	E	_	19	case	_	_
@@ -1442,17 +1440,17 @@
 
 # sent_id = 493
 # text = Eppure anche oggi lavòrano, laceri, imperterriti, pazienti fantaccini.
-1	Eppure	eppure	CCONJ	CC	_	4	cc	_	_
+1	Eppure	eppure	ADV	B	_	4	advmod	_	_
 2	anche	anche	ADV	B	_	4	advmod	_	_
 3	oggi	oggi	ADV	B	_	4	advmod	_	_
 4	lavòrano    lavorare	VERB	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
 5	,	,	PUNCT	FF	_	6	punct	_	_
-6	laceri	lacero	ADJ	A	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No
+6	laceri	lacero	ADJ	A	Gender=Masc|Number=Plur	4	xcomp	_	SpaceAfter=No
 7	,	,	PUNCT	FF	_	8	punct	_	_
-8	imperterriti	imperterrito	ADJ	A	Gender=Masc|Number=Plur	4	conj	_	SpaceAfter=No
+8	imperterriti	imperterrito	ADJ	A	Gender=Masc|Number=Plur	6	conj	_	SpaceAfter=No
 9	,	,	PUNCT	FF	_	10	punct	_	_
-10	pazienti	paziente	ADJ	A	Number=Plur	4	conj	_	_
-11	fantaccini	fantaccino	NOUN	S	Gender=Masc|Number=Plur	10	amod	_	SpaceAfter=No
+10	pazienti	paziente	ADJ	A	Number=Plur	11	amod	_	_
+11	fantaccini	fantaccino	NOUN	S	Gender=Masc|Number=Plur	8	conj	_	SpaceAfter=No
 12	.	.	PUNCT	FS	_	4	punct	_	_
 
 # sent_id = 494
@@ -1842,10 +1840,10 @@
 6	,	,	PUNCT	FF	_	5	punct	_	_
 7	con	con	ADP	E	_	9	case	_	_
 8	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	9	det	_	_
-9	candido	candido	ADJ	A	Gender=Masc|Number=Sing	5	nmod	_	_
-10	pensiero	pensiero	NOUN	S	Gender=Masc|Number=Sing	9	amod	_	_
+9	candido	candido	ADJ	A	Gender=Masc|Number=Sing	10	amod	_	_
+10	pensiero	pensiero	NOUN	S	Gender=Masc|Number=Sing	1	obl	_	_
 11	di	di	ADP	E	_	12	case	_	_
-12	offerta	offerta	NOUN	S	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No
+12	offerta	offerta	NOUN	S	Gender=Fem|Number=Sing	10	nmod	_	SpaceAfter=No
 13	.	.	PUNCT	FS	_	1	punct	_	_
 
 # sent_id = 515
@@ -2038,13 +2036,11 @@
 # sent_id = 523
 # text = Ho degli istanti di ebbrezza:
 1	Ho	avere	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
-2-3	degli	_	_	_	_	_	_	_	_
-2	di	di	ADP	E	_	4	case	_	_
-3	gli	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	4	det	_	_
-4	istanti	istante	NOUN	S	Gender=Masc|Number=Plur	1	nmod	_	_
-5	di	di	ADP	E	_	6	case	_	_
-6	ebbrezza	ebbrezza	NOUN	S	Gender=Fem|Number=Sing	4	nmod	_	SpaceAfter=No
-7	:	:	PUNCT	FC	_	1	punct	_	_
+2	degli	di	DET	DI	Gender=Masc|Number=Plur|PronType=Ind	3	det	_	_
+3	istanti	istante	NOUN	S	Gender=Masc|Number=Plur	1	obj	_	_
+4	di	di	ADP	E	_	5	case	_	_
+5	ebbrezza	ebbrezza	NOUN	S	Gender=Fem|Number=Sing	3	nmod	_	SpaceAfter=No
+6	:	:	PUNCT	FC	_	1	punct	_	_
 
 # sent_id = 524
 # text = mi pare un sogno d’altri tempi:
@@ -2072,7 +2068,7 @@
 11	,	,	PUNCT	FF	_	10	punct	_	_
 12	che	che	PRON	PR	PronType=Rel	13	nsubj	_	_
 13	provo	provare	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_
-14	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_
+14	è	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	17	cop	_	_
 15	certo	certo	ADV	B	_	17	advmod	_	_
 16	qualche	qualche	DET	DI	Number=Sing|PronType=Ind	17	det	_	_
 17	cosa	cosa	NOUN	S	Gender=Fem|Number=Sing	13	obj	_	_
@@ -2224,7 +2220,7 @@
 # sent_id = 534
 # text = Carissima Augusta, sono salvo a Bologna dove sono giunto dopo infinite peripezie.
 1	Carissima	caro	ADJ	A	Degree=Abs|Gender=Fem|Number=Sing	2	amod	_	_
-2	Augusta	Augusta	PROPN	SP	_	5	nsubj	_	SpaceAfter=No
+2	Augusta	Augusta	PROPN	SP	_	5	vocative	_	SpaceAfter=No
 3	,	,	PUNCT	FF	_	2	punct	_	SpacesAfter=\n\t\s
 4	sono	essere	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
 5	salvo	salvo	ADJ	A	Number=Sing	0	root	_	_
@@ -2318,7 +2314,7 @@
 # text = [[Sotto TEN.
 1	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
 2	[	[	PUNCT	FB	_	3	punct	_	SpaceAfter=No
-3	Sotto	sotto	PROPN	SP	_	0	root	_	_
+3	Sotto	sotto	ADP	E	_	0	root	_	_
 4	TEN.	tenente	PROPN	SP	_	3	flat:name	_	SpaceAfter=No
 
 # sent_id = 543
@@ -2608,7 +2604,7 @@
 # text = La vittoria sarà dei forti.
 1	La	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	2	det	_	_
 2	vittoria	vittoria	NOUN	S	Gender=Fem|Number=Sing	6	nsubj	_	_
-3	sarà	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	cop	_	_
+3	sarà	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	6	cop	_	_
 4-5	dei	_	_	_	_	_	_	_	_
 4	di	di	ADP	E	_	6	case	_	_
 5	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_

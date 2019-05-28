@@ -4,7 +4,7 @@
 1	Sto	stare	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	bene	bene	ADV	B	_	1	advmod	_	_
 3	e	e	CCONJ	CC	_	4	cc	_	_
-4	vivo	vivere	VERB	V	Gender=Masc|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	conj	_	_ rassegna// FIXME STRANGE vivo->vivo 
+4	vivo	vivere	VERB	V	Gender=Masc|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	1	conj	_	_
 5	perfettamente	perfettamente	ADV	B	_	6	advmod	_	_
 6	tranquillo	tranquillo	ADJ	A	Gender=Masc|Number=Sing	4	amod	_	SpaceAfter=No
 7	.	.	PUNCT	FS	_	6	punct	_	_
@@ -16,26 +16,26 @@
 3	sorte	sorte	NOUN	S	Gender=Fem|Number=Sing	1	obj	_	_
 4	sia	essere	AUX	V	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
 5	sempre	sempre	ADV	B	_	6	advmod	_	_
-6	propizia	propizio	ADJ	A	Gender=Fem|Number=Sing	0	amod	_	SpaceAfter=No
-7	!	!	PUNCT	FS	_	6	punct	_	_
+6	propizia	propizio	ADJ	A	Gender=Fem|Number=Sing	3	amod	_	SpaceAfter=No
+7	!	!	PUNCT	FS	_	1	punct	_	_
 
 # sent_id = 421
 # text = Se poi sarà contraria, rassegnamoci ai voleri di Dio!
 1	Se	se	SCONJ	CS	_	4	mark	_	_
 2	poi	poi	ADV	B	_	4	advmod	_	_
 3	sarà	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	4	cop	_	_
-4	contraria	contrario	ADJ	A	Gender=Fem|Number=Sing	6	advcl	_	SpaceAfter=No // TODO [Note] da rivedere
+4	contraria	contrario	ADJ	A	Gender=Fem|Number=Sing	6	advcl	_	SpaceAfter=No
 5	,	,	PUNCT	FF	_	4	punct	_	_
 6-7	rassegnamoci	_	_	_	_	_	_	_	_
 6   rassegnamo  rassegnare  VERB V VerbForm=Inf 0   root   _    _
-7   ci	ci	PRON	PC	Clitic=Yes|PronType=Prs 6   obj   _   _
+7   ci  ci	PRON	PC	Clitic=Yes|PronType=Prs 6   expl    _   _
 8-9	ai	_	_	_	_	_	_	_	_
-10	a	a	ADP	E	_	9	case	_	_
-11	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	9	det	_	_
-12	voleri	volere	NOUN	S	Gender=Masc|Number=Plur	6	obl	_	_
-13	di	di	ADP	E	_	11	case	_	_
-14	Dio	dio	PROPN	SP	_	9	nmod	_	SpaceAfter=No
-15	!	!	PUNCT	FS	_	6	punct	_	_
+8	a	a	ADP	E	_	10	case	_	_
+9	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	10	det	_	_
+10	voleri	volere	NOUN	S	Gender=Masc|Number=Plur	6	obl	_	_
+11	di	di	ADP	E	_	11	case	_	_
+12	Dio	dio	PROPN	SP	_	10	nmod	_	SpaceAfter=No
+13	!	!	PUNCT	FS	_	6	punct	_	_
 
 # sent_id = 422
 # text = Io sono in tutto rassegnato e l’eventualità di perdere la vita combattendo non mi spaventa affatto, anzi penso che nessuna sorte potrebbe essere più gloriosa di questa....
@@ -68,20 +68,20 @@
 27	gloriosa	glorioso	ADJ	A	Gender=Fem|Number=Sing	20	ccomp	_	_
 28	di	di	ADP	E	_	29	case	_	_
 29	questa	questa	PRON	PD	Gender=Fem|Number=Sing|PronType=Dem	27	obl	_	SpaceAfter=No
-30	....	....	PUNCT	FS	_	5	punct	_	SpacesAfter=\n\t\s
+30	....	.	PUNCT	FS	_	5	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 423 rassegna// FIXME Remove
+# sent_id = 423
 # text = [[(Inedito, Archivio della Guerra, Milano).
 1	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
 2	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
 3	(	(	PUNCT	FB	_	4	punct	_	SpaceAfter=No
-4	Inedito	inedito	PROPN	SP	_	0	root	_	SpaceAfter=No
+4	Inedito	inedito	ADJ	A	_	0	root	_	SpaceAfter=No
 5	,	,	PUNCT	FF	_	6	punct	_	_
 6	Archivio	archivio	PROPN	SP	_	4	conj	_	_
 7-8	della	_	_	_	_	_	_	_	_
 7	di	di	ADP	E	_	9	case	_	_
 8	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	9	det	_	_
-9	Guerra	guerra	NOUN	S	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No
+9	Guerra	guerra	PROPN	SP	Gender=Fem|Number=Sing	6	nmod	_	SpaceAfter=No
 10	,	,	PUNCT	FF	_	11	punct	_	_
 11	Milano	Milano	PROPN	SP	_	4	conj	_	SpaceAfter=No
 12	)	)	PUNCT	FB	_	4	punct	_	SpaceAfter=No
@@ -89,13 +89,12 @@
 
 # sent_id = 424
 # text = TENENTE DEL 125° Fant.
-1	TENENTE	tenente	NOUN	S	Gender=Masc|Number=Sing	5	advmod	_	_ // TODO [dep] mettere root
+1	TENENTE	tenente	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
 2-3	DEL	_	_	_	_	_	_	_	_
 2	DI	di	ADP	E	_	5	case	_	_
 3	IL	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	5	det	_	_
 4	125°	125°	ADJ	NO	NumType=Ord	5	amod	_	_
-5	Fant	fanteria	NOUN	S	_	0	root	_	SpaceAfter=No
-6	.	.	PUNCT	FS	_	5	punct	_	_
+5	Fant.	fanteria	NOUN	S	_	1	nmod	_	SpaceAfter=No
 
 # sent_id = 425
 # text = GIOSUÈ BORSI.
@@ -162,19 +161,19 @@
 21	,	,	PUNCT	FF	_	24	punct	_	_
 22	che	che	PRON	PR	PronType=Rel	24	nsubj	_	_
 23	non	non	ADV	BN	PronType=Neg	24	advmod	_	_
-24	sopporti	sopportare	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	conj	_	_ // FIXME STRANGE sopporire
+24	sopporti	sopportare	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	5	conj	_	_
 25	gioghi	giogo	NOUN	S	Gender=Masc|Number=Plur	24	obj	_	SpaceAfter=No
 26	.	.	PUNCT	FS	_	2	punct	_	_
 
 # sent_id = 429
 # text = E allora, perchè non ti ribelli a questi tedeschi che vogliono essere i padroni del mondo, soltanto perchè son forti e bene armati?
-1	E	e	CCONJ	CC	_	6	cc	_	_
-2	allora	allora	ADV	B	_	6	advmod	_	SpaceAfter=No
+1	E	e	CCONJ	CC	_	7	cc	_	_
+2	allora	allora	ADV	B	_	7	advmod	_	SpaceAfter=No
 3	,	,	PUNCT	FF	_	2	punct	_	_
-4	perchè	perché	SCONJ	CS	_	6	mark	_	_
-5	non	non	ADV	BN	PronType=Neg	6	advmod	_	_
-6	ti	ti	PRON	PC	Clitic=Yes|Number=Sing|Person=2|PronType=Prs	0	root	_	_
-7	ribelli	riebellare	VERB	V	MOOD=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	6	amod	_	_ // TODO [features]
+4	perchè	perché	SCONJ	CS	_	7	mark	_	_
+5	non	non	ADV	BN	PronType=Neg	7	advmod	_	_
+6	ti	ti	PRON	PC	Clitic=Yes|Number=Sing|Person=2|PronType=Prs	7	root	_	_
+7	ribelli	riebellare	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_
 8	a	a	ADP	E	_	10	case	_	_
 9	questi	questo	DET	DD	Gender=Masc|Number=Plur|PronType=Dem	10	det	_	_
 10	tedeschi	tedesco	NOUN	S	Gender=Masc|Number=Plur	6	nmod	_	_
@@ -187,7 +186,7 @@
 16	di	di	ADP	E	_	18	case	_	_
 17	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	mondo	mondo	NOUN	S	Gender=Masc|Number=Sing	15	nmod	_	SpaceAfter=No
-19	,	,	PUNCT	FF	_	6	punct	_	_
+19	,	,	PUNCT	FF	_	7	punct	_	_
 20	soltanto	soltanto	ADV	B	_	22	advmod	_	_
 21	perchè	perché	SCONJ	CS	_	22	advmod	_	_
 22	son	essere	AUX	V	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	6	appos	_	_
@@ -200,8 +199,8 @@
 # sent_id = 430
 # text = e dov’è il tuo senso di giustizia e di libertà?
 1	e	e	CCONJ	CC	_	6	cc	_	_
-2	dov’	dove	ADV	B	_	6	nsubj	_	SpaceAfter=No // FIXME STRANGE idov
-3	è	essere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
+2	dov’	dove	ADV	B	_	6	nsubj	_	SpaceAfter=No
+3	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	cop	_	_
 4	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
 5	tuo	tuo	DET	AP	Gender=Masc|Number=Sing|Poss=Yes|PronType=Prs	6	det:poss	_	_
 6	senso	senso	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
@@ -267,7 +266,7 @@
 
 # sent_id = 433
 # text = Mi avranno morto, ma non schiavo.
-1	Mi	mi	PRON	PC	Clitic=Yes|Number=Sing|Person=1|PronType=Prs	3	iobj	_	_
+1	Mi	mi	PRON	PC	Clitic=Yes|Number=Sing|Person=1|PronType=Prs	3	obj	_	_
 2	avranno	avere	AUX	VM	Mood=Ind|Number=Plur|Person=3|Tense=Fut|VerbForm=Fin	3	aux	_	_
 3	morto	morire	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	SpaceAfter=No
 4	,	,	PUNCT	FF	_	7	punct	_	_
@@ -278,7 +277,7 @@
 
 # sent_id = 434
 # text = Dio farà giustizia per me.
-1	Dio	Dio	NOUN	S	Gender=Masc|Number=Sing	2	nsubj	_	_
+1	Dio	Dio	PROPN	SP	_	2	nsubj	_	_
 2	farà	fare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 3	giustizia	giustizia	NOUN	S	Gender=Fem|Number=Sing	2	obj	_	_
 4	per	per	ADP	E	_	5	case	_	_
@@ -324,17 +323,17 @@
 
 # sent_id = 436
 # text = Chi è più forte e libero tra me e te?
-1	Chi	chi	PRON	PQ	PronType=Int	0	root	_	_
-2	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	cop	_	_
+1	Chi	chi	PRON	PQ	PronType=Int	4	nsubj	_	_
+2	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_
 3	più	più	ADV	B	_	4	advmod	_	_
-4	forte	forte	ADJ	A	Number=Sing	1	amod	_	_
+4	forte	forte	ADJ	A	Number=Sing	0	root	_	_
 5	e	e	CCONJ	CC	_	6	cc	_	_
 6	libero	libero	ADJ	A	Gender=Masc|Number=Sing	4	conj	_	_
 7	tra	tra	ADP	E	_	8	case	_	_
 8	me	me	PRON	PC	Clitic=Yes|Number=Sing|Person=1|PronType=Prs	6	obl	_	_
 9	e	e	CCONJ	CC	_	10	cc	_	_
 10	te	te	PRON	PC	Clitic=Yes|Number=Sing|Person=2|PronType=Prs	8	conj	_	SpaceAfter=No
-11	?	?	PUNCT	FS	_	1	punct	_	_
+11	?	?	PUNCT	FS	_	4	punct	_	_
 
 # sent_id = 437
 # text = Chi ama più la libertà?
@@ -347,18 +346,18 @@
 
 # sent_id = 438
 # text = Tu, che sacrifici sei pronto a fare per la libertà?
-1	Tu	tu	PRON	PE	Number=Sing|Person=2|PronType=Prs	0	root	_	SpaceAfter=No
+1	Tu	tu	PRON	PE	Number=Sing|Person=2|PronType=Prs	4	nsubj	_	SpaceAfter=No
 2	,	,	PUNCT	FF	_	1	punct	_	_
 3	che	che	PRON	PR	PronType=Rel	6	nsubj	_	_
-4	sacrifici	sacrificio	NOUN	S	Gender=Masc|Number=Plur	6	amod	_	_
+4	sacrifici	sacrificio	NOUN	S	Gender=Masc|Number=Plur	6	obj	_	_
 5	sei	essere	AUX	V	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	6	cop	_	_
-6	pronto	pronto	ADJ	A	Gender=Masc|Number=Sing	1	acl:relcl	_	_
+6	pronto	pronto	ADJ	A	Gender=Masc|Number=Sing 0	root	_	_
 7	a	a	ADP	E	_	8	mark	_	_
 8	fare	fare	VERB	V	VerbForm=Inf	6	advcl	_	_
 9	per	per	ADP	E	_	11	case	_	_
 10	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	11	det	_	_
 11	libertà	libertà	NOUN	S	Gender=Fem	8	obl	_	SpaceAfter=No
-12	?	?	PUNCT	FS	_	1	punct	_	_
+12	?	?	PUNCT	FS	_	6	punct	_	_
 
 # sent_id = 439
 # text = Hai paura dello zaino?
@@ -373,8 +372,8 @@
 # sent_id = 440
 # text = Cento zaini porterai sulle spalle!
 1	Cento	cento	NUM	N	NumType=Card	2	nummod	_	_
-2	zaini	zaino	NOUN	S	Gender=Masc|Number=Plur	3	nsubj	_	_
-3	porterai	portare	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin	0	root	_	_ // FIXME STRANGE porteere
+2	zaini	zaino	NOUN	S	Gender=Masc|Number=Plur	3	obj	_	_
+3	porterai	portare	VERB	V	Mood=Ind|Number=Sing|Person=2|Tense=Fut|VerbForm=Fin	0	root	_	_
 4-5	sulle	_	_	_	_	_	_	_	_
 4	su	su	ADP	E	_	6	case	_	_
 5	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	6	det	_	_
@@ -384,7 +383,7 @@
 # sent_id = 441
 # text = Ho fatto la vita del soldato, ho dormito sul pagliericcio, ho fatto marce sotto il sole e sotto la pioggia, sveglia alle quattro, alle tre, mangiato il rancio e la pagnotta.
 1	Ho	avere	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	aux	_	_
-2	fatto	fare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	10	advcl	_	_
+2	fatto	fare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
 3	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	vita	vita	NOUN	S	Gender=Fem|Number=Sing	2	obj	_	_
 5-6	del	_	_	_	_	_	_	_	_
@@ -400,7 +399,7 @@
 13	pagliericcio	pagliericcio	NOUN	S	Gender=Masc|Number=Sing	10	obl	_	SpaceAfter=No
 14	,	,	PUNCT	FF	_	10	punct	_	_
 15	ho	avere	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	16	aux	_	_
-16	fatto	fare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
+16	fatto	fare	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	2	advcl	_	_
 17	marce	marcia	NOUN	S	Gender=Fem|Number=Plur	16	obj	_	_
 18	sotto	sotto	ADP	E	_	20	case	_	_
 19	il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	20	det	_	_
@@ -427,7 +426,7 @@
 38	e	e	CCONJ	CC	_	40	cc	_	_
 39	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	40	det	_	_
 40	pagnotta	pagnotta	NOUN	S	Gender=Fem|Number=Sing	37	conj	_	SpaceAfter=No
-41	.	.	PUNCT	FS	_	16	punct	_	_
+41	.	.	PUNCT	FS	_	2	punct	_	_
 
 # sent_id = 442
 # text = Ebbene?
@@ -486,7 +485,7 @@
 16	,	,	PUNCT	FF	_	17	punct	_	_
 17	andavo	andare	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	5	conj	_	_
 18	a	a	ADP	E	_	19	case	_	_
-19	letto	letto	NOUN	S	Gender=Masc|Number=Sing	17	obl	_	_ // FIXME STRANGE LETTO -> LEGGERE
+19	letto	letto	NOUN	S	Gender=Masc|Number=Sing	17	obl	_	_
 20	la	il	DET	RD	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	21	det	_	_
 21	notte	notte	NOUN	S	Gender=Fem|Number=Sing	17	obj	_	_
 22	tardi	tardi	ADV	B	_	17	advmod	_	_
@@ -596,7 +595,7 @@
 8	guerra	guerra	NOUN	S	Gender=Fem|Number=Sing	6	obj	_	SpaceAfter=No
 9	,	,	PUNCT	FF	_	6	punct	_	_
 10	la	il	PRON	PC	Clitic=Yes|Gender=Fem|Number=Sing|Person=3|PronType=Prs	11	obj	_	_
-11	detesto	detestare	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	parataxis	_	SpaceAfter=No // FIXME STRANGE destestare
+11	detesto	detestare	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	6	parataxis	_	SpaceAfter=No
 12	,	,	PUNCT	FF	_	11	punct	_	_
 13	l’	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No
 14	abborro	abborro	NOUN	S	Gender=Masc|Number=Sing	11	appos	_	SpaceAfter=No // TODO [Note] da rivedere abborro
@@ -705,7 +704,7 @@
 19	assassini	assassino	NOUN	S	Gender=Masc|Number=Plur	17	conj	_	SpaceAfter=No
 20	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 457 // FIXME Remove
+# sent_id = 457
 # text = [[(GIOSUÈ BORSI, Lettere scelte, 1902-1915, a cura di Ferdinando Palazzi, con 7 illustrazioni, Milano, Frat. 
 1	[	[	PUNCT	FB	_	7	punct	_	SpaceAfter=No
 2	[	[	PUNCT	FB	_	7	punct	_	SpaceAfter=No
@@ -734,7 +733,7 @@
 25	,	,	PUNCT	FF	_	26	punct	_	_
 26	Frat.	Frat.	PROPN	SP	_	22	conj	_	SpacesAfter=\n\t\s
 
-# sent_id = 458 // FIXME Remove
+# sent_id = 458
 # text = Treves, 1931, Pag. 377).
 1	Treves	Treves	PROPN	SP	_	0	root	_	SpaceAfter=No
 2	,	,	PUNCT	FF	_	1	punct	_	_
@@ -745,19 +744,19 @@
 7	)	)	PUNCT	FB	_	5	punct	_	SpaceAfter=No
 8	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 459 // FIXME [Unione] // TODO mettere ABBR. 
+# sent_id = 459
 # text = SoTT. TEN. DI FANT. Dr. DAVIDE PERRONI.
-1	SoTT.	SoTT.	PROPN	SP	_	0	root	_	_
-2	TEN.	TEN.	PROPN	SP	_	1	flat:name	_	_
+1	SoTT.	sotto	ADP	E	_	2	compound	_	_
+2	TEN.	tenente NOUN	S	Gender=Masc|Number=Sing	1	root	_	_
 
 # sent_id = 460
-# text = SoTT. TEN. DI FANT. Dr. DAVIDE PERRONI.
-3	DI	di	ADP	E	_	2	case	_	_
-4	FANT.	FANT.	PROPN	SP	_	0	root	_	_
-5	Dr.	dottore	PROPN	SP	_	2	flat:name	_	SpaceAfter=No
-6	DAVIDE	Davide	PROPN	SP	_	2	appos	_	_
-7	PERRONI	PERRONI	PROPN	SP	_	5	flat:name	_	SpaceAfter=No
-8	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n\t\s
+# text = DI FANT. Dr. DAVIDE PERRONI.
+1	DI	di	ADP	E	_	2	case	_	_
+2	FANT.	fanteria	PROPN	SP	_	0	root	_	_
+3	Dr.	dottore	PROPN	SP	_	2	flat:name	_	SpaceAfter=No
+4	DAVIDE	Davide	PROPN	SP	_	2	appos	_	_
+5	PERRONI	PERRONI	PROPN	SP	_	5	flat:name	_	SpaceAfter=No
+6	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n\t\s
 
 # sent_id = 461
 # text = Nato in Sampierdarena il 27 novembre 1892.
@@ -844,7 +843,7 @@
 # sent_id = 468
 # text = ritornare sano importa sì, ma sopratutto importa conservarsi puri, importa compiere fino all’ultimo il proprio dovere.
 1	ritornare	ritornare	VERB	V	VerbForm=Inf	0	root	_	_
-2	sano	sano	ADJ	A	Gender=Masc|Number=Sing	1	xcomp	_	_ // FIXME STRANGE sano -> sare
+2	sano	sano	ADJ	A	Gender=Masc|Number=Sing	1	xcomp	_	_
 3	importa	importare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	advcl	_	_
 4	sì	sì	ADV	B	_	3	advmod	_	SpaceAfter=No
 5	,	,	PUNCT	FF	_	8	punct	_	_
@@ -976,7 +975,7 @@
 21	se	se	SCONJ	CS	_	24	mark	_	_
 22	così	così	ADV	B	_	24	advmod	_	_
 23	non	non	ADV	BN	PronType=Neg	24	advmod	_	_
-24	fosse	essere	AUX	V	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	advcl	_	SpaceAfter=No // FIXME STRANGE fosse->fossa
+24	fosse	essere	AUX	V	Mood=Sub|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	26	advcl	_	SpaceAfter=No
 25	,	,	PUNCT	FF	_	24	punct	_	_
 26	sappi	sapere	V	S	Mood=Ind|Number=Sing|Person=2|Tense=Imp|VerbForm=Fin	6	conj	_	_
 27	che	che	PRON	PR	PronType=Rel	32	nsubj	_	_
@@ -1032,7 +1031,7 @@
 6	,	,	PUNCT	FF	_	8	punct	_	_
 7	non	non	ADV	BN	PronType=Neg	8	advmod	_	_
 8-9 rattristarti	_	_	_	_	_	_	_	SpaceAfter=No
-8	rattristarti	rattristare	VERB	V	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	SpaceAfter=No // FIXME STRANGE rattristarti->rattristartire
+8	rattristarti	rattristare	VERB	V	Mood=Sub|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	conj	_	SpaceAfter=No
 9   ti  ti	PRON	PC	Clitic=Yes|Number=Plur|Person=1|PronType=Prs	8	expl	_	SpaceAfter=No
 10	,	,	PUNCT	FF	_	14	punct	_	_
 11	tutto	tutto	DET	DI	Gender=Masc|Number=Sing|PronType=Ind	11	det	_	_
@@ -1042,10 +1041,10 @@
 15	scritto	scrivere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	1	conj	_	_
 16	perchè	perché	SCONJ	CS	_	17	case	_	_
 17	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
-18	dovevo	dovere	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	14	obl	_	SpaceAfter=No // FIXME STRANGE dovevo-> dovevo
+18	dovevo	dovere	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	14	obl	_	SpaceAfter=No
 19	...	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 473 // FIXME Remove
+# sent_id = 473
 # text = DAVID. [[(Inedito, Archivio della Guerra, Milano).
 1	DAVID	david	NOUN	S	_	0	root	_	SpaceAfter=No
 2	.	.	PUNCT	FF	_	1	punct	_	SpacesAfter=\n\t\s
@@ -1064,17 +1063,19 @@
 14	)	)	PUNCT	FB	_	6	punct	_	SpaceAfter=No
 15	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 474 // FIXME [REVERT] Revert unione e ap:escalte
-# text = CAPITANO DEL 231° Fant. GINO CORBINI.
+# sent_id = 474
+# text = CAPITANO DEL 231° Fant.
 1	CAPITANO	capitano	NOUN	S	_	0	root	_	_
 2-3	DEL	_	_	_	_	_	_	_	_
 2	DI	di	ADP	E	_	3	case	_	_
 3	IL	il	PROPN	SP	_	1	nmod	_	_
 4	231°	231	ADJ	NO	Number=Sing|NumType=Ord	3	amod	_	_
 5	Fant.	fanteria	NOUN	S	_	1	_	_	_
-6	GINO	Gino	ADP	E	_	2	case	_	_
-7	CORBINI	CORBINI	PROPN	SP	_	0	root	_	SpaceAfter=No
-8	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n\t\s
+
+# sent_id = 475
+1	GINO	Gino	PROPN	SP	_	0	root	_	_
+2	CORBINI	Corbini	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
+3	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
 # sent_id = 476
 # text = Nato in Siena il 23 febbraio 1891.
@@ -1108,7 +1109,7 @@
 
 # sent_id = 479
 # text = Niun sacrificio è troppo grave per la terra in cui viviamo...]] ....
-1	Niun	Niuno	DET	DI	Gender=Masc|Number=Sing|PronType=Ind	2	det	_	_ // TODO [features] Nessuno?
+1	Niun	Niuno	DET	DI	Gender=Masc|Number=Sing|PronType=Ind	2	det	_	_
 2	sacrificio	sacrificio	NOUN	S	Gender=Masc|Number=Sing	5	nsubj	_	_
 3	è	essere	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_
 4	troppo	troppo	ADV	B	_	5	advmod	_	_
@@ -1118,7 +1119,7 @@
 8	terra	terra	NOUN	S	Gender=Fem|Number=Sing	5	obl	_	_
 9	in	in	ADP	E	_	10	case	_	_
 10	cui	cui	PRON	PR	PronType=Rel	8	nmod	_	_
-11	viviamo	vivere	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	10	punct	_	SpaceAfter=No // FIXME STRANGE
+11	viviamo	vivere	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	10	punct	_	SpaceAfter=No
 12  ...	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 12	]	]	PUNCT	FB	_	10	punct	_	SpaceAfter=No
 13	]	]	PUNCT	FB	_	10	punct	_	SpacesAfter=\n\t\s\n\t\s
@@ -1370,7 +1371,7 @@
 28	figlioli	figliolo	NOUN	S	Gender=Masc|Number=Plur	25	obj	_	SpaceAfter=No
 29	.	.	PUNCT	FS	_	2	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 487 // FIXME Remove
+# sent_id = 487
 # text = [[(Inedito, Archivio della Guerra, Milano).
 1	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
 2	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
@@ -1387,21 +1388,24 @@
 12	)	)	PUNCT	FB	_	4	punct	_	SpaceAfter=No
 13	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 488 // FIXME [REVERT] Unione 
-# text = CAPITANO NELL’ 84° FaNT. MARIO MERLIN, medaglia d’oro.
+# sent_id = 488
+# text = CAPITANO NELL’ 84° FaNT.
 1	CAPITANO	capitano	NOUN	S	_	0	root	_	_
 2-3	NELL’	_	_	_	_	_	_	_	_
 2	IN	in	ADP	E	_	1	flat:name	_	_
 3	L’	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
 4	84°	84°	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	5	amod	_	_
-5	FaNT.	FaNT	PROPN	SP	_	1	nmod	_	SpaceAfter=No
-6	MARIO	Mario	PROPN	SP	_	0	root	_	_
-7	MERLIN	MERLIN	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
-8	,	,	PUNCT	FF	_	1	punct	_	_
-9	medaglia	medaglia	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-10	d’	di	ADP	E	_	6	case	_	SpaceAfter=No
-11	oro	oro	NOUN	S	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-12	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
+5	FaNT.	fanteria	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
+
+# sent_id = 489
+# text = MARIO MERLIN, medaglia d’oro.
+1	MARIO	Mario	PROPN	SP	_	0	root	_	_
+2	MERLIN	Merlin	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	FF	_	1	punct	_	_
+4	medaglia	medaglia	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
+5	d’	di	ADP	E	_	6	case	_	SpaceAfter=No
+6	oro	oro	NOUN	S	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
 # sent_id = 490
 # text = Caduto sull’Altipiano di Bainsizza il 29 settembre 1917.
@@ -1428,7 +1432,7 @@
 5	fante	fante	NOUN	S	Gender=Masc|Number=Sing	2	nmod	_	SpaceAfter=No
 6	.	.	PUNCT	FS	_	2	punct	_	SpaceAfter=No
 
-# sent_id = 492 // FIXME STRANGE
+# sent_id = 492
 # text = ]] 3 gennaio 1916.
 1	]	]	PUNCT	FB	_	3	punct	_	SpaceAfter=No
 2	]	]	PUNCT	FB	_	1	punct	_	SpacesAfter=\n\t\s
@@ -1602,7 +1606,7 @@
 13	di	di	ADP	E	_	14	case	_	_
 14	congiura	congiura	NOUN	S	Gender=Fem|Number=Sing	11	obl	_	SpaceAfter=No
 15	,	,	PUNCT	FF	_	4	punct	_	_
-16	eromperà	erompere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_ // FIXME STRANGE eromperà->erompare
+16	eromperà	erompere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Fut|VerbForm=Fin	0	root	_	_
 17	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	18	det	_	_
 18	giorno	giorno	NOUN	S	Gender=Masc|Number=Sing	16	obj	_	SpaceAfter=No
 19	,	,	PUNCT	FF	_	16	punct	_	_
@@ -1699,7 +1703,7 @@
 23	vittoria	vittoria	NOUN	S	_	20	conj	_	SpaceAfter=No
 24	...	.	PUNCT	FS	_	6	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 505 // FIXME Remove
+# sent_id = 505
 # text = [[(Inedito, Archivio della Guerra, Milano).
 1	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
 2	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
@@ -1716,22 +1720,24 @@
 12	)	)	PUNCT	FB	_	4	punct	_	SpaceAfter=No
 13	.	.	PUNCT	FS	_	4	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 506 // FIXME [Unione]
-# text = CAPITANO NELL’ 84° FANT. MARIO MERLIN, medaglia d’oro.
+# sent_id = 506
+# text = CAPITANO NELL’ 84° FANT.
 1	CAPITANO	capitano	NOUN	S	_	0	root	_	_
 2-3	NELL’	_	_	_	_	_	_	_	_
-2	IN	in	PROPN	SP	_	1	flat:name	_	_
+2	IN	in	ADP	E	_	1	flat:name	_	_
 3	L’	il	DET	RD	Definite=Def|Number=Sing|PronType=Art	5	det	_	_
 4	84°	84°	ADJ	NO	Gender=Masc|Number=Sing|NumType=Ord	5	amod	_	_
-5	FANT	FANT	PROPN	SP	_	1	nmod	_	SpaceAfter=No
-6	.	.	PUNCT	FS	_	1	punct	_	_
-7	MARIO	Mario	PROPN	SP	_	0	root	_	_
-8	MERLIN	MERLIN	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
-9	,	,	PUNCT	FF	_	1	punct	_	_
-10	medaglia	medaglia	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
-11	d’	di	ADP	E	_	6	case	_	SpaceAfter=No
-12	oro	oro	NOUN	S	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
-13	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
+5	FaNT.	fanteria	NOUN	S	Gender=Fem|Number=Sing	1	nmod	_	SpaceAfter=No
+
+# sent_id = 507
+# text = MARIO MERLIN, medaglia d’oro.
+1	MARIO	Mario	PROPN	SP	_	0	root	_	_
+2	MERLIN	Merlin	PROPN	SP	_	1	flat:name	_	SpaceAfter=No
+3	,	,	PUNCT	FF	_	1	punct	_	_
+4	medaglia	medaglia	NOUN	S	Gender=Fem|Number=Sing	1	appos	_	_
+5	d’	di	ADP	E	_	6	case	_	SpaceAfter=No
+6	oro	oro	NOUN	S	Gender=Masc|Number=Sing	4	nmod	_	SpaceAfter=No
+7	.	.	PUNCT	FS	_	1	punct	_	SpacesAfter=\n\t\s
 
 # sent_id = 508
 # text = Caduto sull’Altipiano di Bainsizza il 29 settembre 1917.
@@ -1826,7 +1832,7 @@
 
 # sent_id = 514
 # text = Offriamo tutto alla Patria, con un candido pensiero di offerta.
-1	Offriamo	offrire	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_ // FIXME STRANGE offriamo -> offrare
+1	Offriamo	offrire	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
 2	tutto	tutto	PRON	PI	Gender=Masc|Number=Sing|PronType=Ind	1	obj	_	_
 3-4	alla	_	_	_	_	_	_	_	_
 3	a	a	ADP	E	_	5	case	_	_
@@ -1841,7 +1847,7 @@
 12	offerta	offerta	NOUN	S	Gender=Fem|Number=Sing	9	nmod	_	SpaceAfter=No
 13	.	.	PUNCT	FS	_	1	punct	_	_
 
-# sent_id = 515 // FIXME !!! ANNOTATION CHECKPOINT !!!
+# sent_id = 515
 # text = Il sangue che esce dalle ferite splende di santa luce;
 1	Il	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	2	det	_	_
 2	sangue	sangue	NOUN	S	Gender=Masc|Number=Sing	0	root	_	_
@@ -1851,7 +1857,7 @@
 5	da	da	ADP	E	_	8	case	_	_
 6	le	il	DET	RD	Definite=Def|Gender=Fem|Number=Plur|PronType=Art	8	det	_	_
 7	ferite	ferita	ADJ	A	Gender=Fem|Number=Plur	8	amod	_	_
-8	splende	splendere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	obl	_	_ // FIXME STRANGE spende -> splendo
+8	splende	splendere	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	obl	_	_
 9	di	di	ADP	E	_	11	case	_	_
 10	santa	santo	DET	DI	Gender=Fem|Number=Sing|PronType=Ind	11	det	_	_
 11	luce	luce	NOUN	S	Gender=Fem|Number=Sing	8	nmod	_	SpaceAfter=No
@@ -1864,7 +1870,7 @@
 3	silenziosa	silenzioso	ADJ	A	Gender=Fem|Number=Sing	2	amod	_	_
 4	è	essere	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	6	aux:pass	_	_
 5	come	come	ADV	B	_	6	advmod	_	_
-6	addolcita	addolciare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_ // FIXME STRANG addolcita->addolcitare
+6	addolcita	addolciare	VERB	V	Gender=Fem|Number=Sing|Tense=Past|VerbForm=Part	0	root	_	_
 7	da	da	ADP	E	_	10	case	_	_
 8	un	uno	DET	RI	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	10	det	_	_
 9	altro	altro	ADJ	A	Gender=Masc|Number=Sing	10	amod	_	_
@@ -1911,7 +1917,7 @@
 # text = Noi morti riviviamo nei superstiti d’una più forte e più feconda vita.
 1	Noi	noi	PRON	PE	Number=Plur|Person=1|PronType=Prs	2	nsubj	_	_
 2	morti	morto	NOUN	S	Gender=Masc|Number=Plur	0	root	_	_
-3	riviviamo	rivivere	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	_	_ // FIXME STRANGE riviviamo->riviviare
+3	riviviamo	rivivere	VERB	V	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	2	ccomp	_	_
 4-5	nei	_	_	_	_	_	_	_	_
 4	in	in	ADP	E	_	6	case	_	_
 5	i	il	DET	RD	Definite=Def|Gender=Masc|Number=Plur|PronType=Art	6	det	_	_
@@ -2061,7 +2067,7 @@
 7	sento	sentire	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	2	acl:relcl	_	SpaceAfter=No
 8	,	,	PUNCT	FF	_	10	punct	_	_
 9	che	che	PRON	PR	PronType=Rel	10	obj	_	_
-10	vivo	vivere	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	conj	_	SpaceAfter=No // FIXME STRANGE vivo->vivere
+10	vivo	vivere	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	7	conj	_	SpaceAfter=No
 11	,	,	PUNCT	FF	_	10	punct	_	_
 12	che	che	PRON	PR	PronType=Rel	13	nsubj	_	_
 13	provo	provare	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	10	acl:relcl	_	_
@@ -2372,7 +2378,7 @@
 14	spezzate	spezzate	ADJ	A	Gender=Fem|Number=Plur	13	amod	_	SpaceAfter=No
 15	,	,	PUNCT	FF	_	17	punct	_	_
 16	ma	ma	CCONJ	CC	_	17	cc	_	_
-17	sorrido	sorridere	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	11	conj	_	SpaceAfter=No // FIXME sorrido -> sorrido
+17	sorrido	sorridere	VERB	V	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	11	conj	_	SpaceAfter=No
 18	...	.	PUNCT	FS	_	13	punct	_	_
 
 # sent_id = 547
@@ -2621,7 +2627,7 @@
 # sent_id = 566
 # text = Qui bisogna essere uomini, sommamente attivi e pronti a tutto;
 1	Qui	qui	ADV	B	_	2	advmod	_	_
-2	bisogna	bisognare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_ // FIXME STRANGE bisogna -> bisognare
+2	bisogna	bisognare	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	essere	essere	AUX	V	VerbForm=Inf	4	cop	_	_
 4	uomini	uomo	NOUN	S	Gender=Masc|Number=Plur	2	ccomp	_	SpaceAfter=No
 5	,	,	PUNCT	FF	_	7	punct	_	_
@@ -2664,7 +2670,7 @@
 10	guerra	guerra	NOUN	S	Gender=Fem|Number=Sing	8	nmod	_	_
 11	e	e	CCONJ	CC	_	13	cc	_	_
 12	quindi	quindi	ADV	B	_	13	advmod	_	_
-13	bisogna	bisogna	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_ // FIXME STRANGE bisogna -> bisognare
+13	bisogna	bisogna	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	conj	_	_
 14	coltivare	coltivare	VERB	V	VerbForm=Inf	13	xcomp	_	_
 15	fortemente	fortemente	ADV	B	_	14	advmod	_	_
 16	lo	il	DET	RD	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
@@ -2681,7 +2687,7 @@
 27	che	che	PRON	PR	PronType=Rel	30	nsubj	_	_
 28	ci	ci	PRON	PC	Clitic=Yes|PronType=Prs	30	expl	_	_
 29	sono	essere	AUX	VA	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	30	aux	_	SpacesAfter=\s\s
-30	prefissi	prefissare	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	26	acl:relcl	_	SpaceAfter=No // FIXME STRANGE prefissi->prefissi
+30	prefissi	prefissare	VERB	V	Gender=Masc|Number=Plur|Tense=Past|VerbForm=Part	26	acl:relcl	_	SpaceAfter=No
 31	;	;	PUNCT	FC	_	2	punct	_	_
 
 # sent_id = 569
@@ -2864,7 +2870,7 @@
 9	anch’	anche	ADV	B	_	10	advmod	_	SpaceAfter=No // TODO [dep] cambiare det
 10	io	io	PRON	PE	Number=Sing|Person=1|PronType=Prs	12	nsubj	_	_
 11	ho	avere	AUX	VA	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	12	aux	_	_
-12	pianto	piangere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	conj	_	SpaceAfter=No // FIXME STRANGE pianto -> piantare
+12	pianto	piangere	VERB	V	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	conj	_	SpaceAfter=No
 13	!	!	PUNCT	FS	_	3	punct	_	_
 
 # sent_id = 578
@@ -2965,7 +2971,7 @@
 27	fecondo	fecondo	NOUN	S	_	26	compound	_	SpaceAfter=No
 28	...	.	PUNCT	FS	_	7	punct	_	SpacesAfter=\n\t\s
 
-# sent_id = 582 // FIXME Remove
+# sent_id = 582
 # text = [[(Inedito, Archivio della Guerra, Milano).
 1	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
 2	[	[	PUNCT	FB	_	4	punct	_	SpaceAfter=No
